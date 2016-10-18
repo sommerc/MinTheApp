@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<sessions>
+    <entry>
+        <entryId>0</entryId>
+        <sessionId>0</sessionId>
+        <chair>Marina Martinic</chair>
+        <sessionName>Molecular Toolbox</sessionName>
+        <presenterName>Jan Ellenberg</presenterName>
+        <department>Cell Biology &amp; Biophysics Unit</department>
+        <affiliation>EMBL, Heidelberg</affiliation>
+        <imageId>ellenberg</imageId>
+        <title>Systems biology of cell division using light microscopy</title>
+        <date>04.11.2016</date>
+        <day>Thursday</day>
+        <time>9:45 - 10:45</time>
+        <keyNote>1</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            Cell division is fundamental to all life. In somatic cells it drives the continuous renewal of tissues, in the embryo the rapid proliferation of totipotent cells. We have developed advanced light microscopy tools to study both in a systematic and quantitative manner. Using systematic gene silencing by RNAi and subsequent phenotyping by high‐throughput microscopy we have defined ~600 genes that are required for a human cell to divide faithfully during somatic mitosis. To understand the resulting dynamic protein networks and their orchestration in space and time, we have established an integrated systems biology workflow. After homozygous genome editing to tag all endogenous copies of a given mitotic protein fluorescently, we image its absolute abundance and subcellular distribution by calibrated 4D imaging relative to spatio‐temporal landmarks. Computational image analysis and modeling allows us to align cell morphology in space and time to obtain a standard mitotic cell into which we can integrate all protein data. Using image parameterization and machine learning, we measure the dynamic subcellular localization as well as fluxes between subcellular compartments and structures, which enables predictions of protein clusters, the chronological order of their formation and disassembly, and the abundance of their subunits. Our integrated computational and experimental method is generic and makes many dynamic cellular processes amenable to dynamic protein network analysis. Light‐sheet imaging has revolutionized our understanding of cell division during embryonic development in many biological model systems. Early mammalian development, however, remained inaccessible due to high light sensitivity and demanding culture requirements. A newly developed inverted high‐throughput capable light‐sheet microscope enabled the first in toto imaging of preimplantation mouse development from zygote to blastocyst. Using computational cell tracking, lineage tree reconstruction, and fate assignment, we revealed when fate determination happens and that chromosome segregation problems and aneuploidy is relatively common in mouse embryos.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>1</entryId>
+        <sessionId>0</sessionId>
+        <chair>Marina Martinic</chair>
+        <sessionName>Molecular Toolbox</sessionName>
+        <presenterName>Steve Lever</presenterName>
+        <department>Defence Science and Technology Laboratory</department>
+        <affiliation>UK Ministry of Defence</affiliation>
+        <imageId>lever</imageId>
+        <title>Use of spider webs to determine the survival rate of filoviruses contained within aerosols</title>
+        <date>November 3rd</date>
+        <day>Thursday</day>
+        <time>10:45 - 11:20</time>
+        <keyNote>0</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            The recent Ebola virus epidemic in West Africa has confirmed previous knowledge that filoviruses (Ebola virus and the closely related Marburg virus) are associated with high morbidity and mortality rates in humans. In addition, they are capable of human-to-human transmission, via infected material such as blood and other body fluids, and are believed to have low infectious doses for humans. Although Ebola virus is not naturally transmitted by the aerosol route, droplet spread may occur during an outbreak. In experimental model systems, filoviruses are able to infect via the respiratory route and are lethal at very low doses, but there is minimal information on how well filoviruses are able to survive within aerosol particles. There is also little known about how well filoviruses survive in liquids or on solid surfaces, which is important in the management of patients or samples that have been exposed to filoviruses. Understanding the ability to survive in an aerosol leads to better understanding of the hazard posed by pathogenic organisms and can inform decisions related to the control and management of disease outbreaks. Dstl have developed a method where aerosol droplets containing filoviruses can be captured using microthreads, in the form of spiders’ webs, and the decay rates of different species of Ebolavirus and Marburgvirus were determined under different environmental conditions. In this presentation, data will be presented to show how the application of this technique has enabled the relative survival rate of filoviruses in aerosols and the potential infectivity of filoviruses to be determined.
+        </abstract>
+    </entry>
+
+
+    <entry>
+        <entryId>2</entryId>
+        <sessionId>0</sessionId>
+        <chair>Marina Martinic</chair>
+        <sessionName>Molecular Toolbox</sessionName>
+        <presenterName>Luke Alphey</presenterName>
+        <department>The Pirbright Institute</department>
+        <affiliation>Surrey, UK</affiliation>
+        <imageId>alphey</imageId>
+        <title>Genetic control of mosquitoess</title>
+        <date>04.11.2016</date>
+        <day>Thursday</day>
+        <time>11:20 – 11:55</time>
+        <keyNote>0</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            The rise in dengue over the past 50 years, together with recent outbreaks of chikungunya and Zika, has highlighted the lack of sustainable and efficient control of its primary vector Aedes aegypti. The development of genetic control has enabled the creation of possible alternative tools to traditional methods against mosquitoes either through population replacement or population suppression. We have developed synthetic genetic circuits to produce “genetically sterile” males of the target pest species.  These sterile male mosquitoes (male mosquitoes do not bite or transmit disease) are released continually over a wide area to mate with the target pest population; death of progeny due to inheritance of the transgene leads to decline of the target population.  A key feature is that the method is ‘self-limiting’; making it controllable, reliable and reversible, in contrast to methods where the genetic change needs to persist in the wild population. Genetic control strains based on this principle have now been developed for at least eight major insect pest species. Field trials for the lead Aedes aegypti strain, OX513A, have been successfully conducted in the Cayman Islands, Malaysia, Brazil and Panama. Target populations of this mosquito species were suppressed by over 90% relative to control populations, despite ongoing immigration from adjacent areas and differences in ecological and social settings. Public acceptance of the technology at the field sites has been good. Applications in agriculture and in conservation biology are also being actively considered.
+        </abstract>
+    </entry>
+</sessions>
