@@ -206,4 +206,87 @@
             Brain-Computer Interface (BCI) technology has been established as the solution towards direct mind control by human individuals. Clinical BCI applications are the spearhead of the field and motor-disabled end-users have been shown to benefit from a variety of BCI prototypes for communication, assistive mobility, motor substitution and restoration, environmental control and, more recently, neurorehabilitation. Pre-clinical and real-world validation of current BCI prototypes are essential for identifying these principles that can alleviate the shortcomings in the state-of-the-art and maximize the added value of BCI applications. In this talk, I will provide an overview of such principles successfully applied by the CNBI laboratory of EPFL, as well as exemplary applications where those have been evaluated. Our laboratory develops non-invasive BCI systems based on electroencephalographic (EEG) signals and, thus, devoid of medical hazards, real-time, portable, relatively low-cost and minimally obtrusive. Our research is pushing forward asynchronous paradigms offering spontaneous, ecological interaction. Furthermore, we stand on the machine-learning way to BCI with emphasis on personalization and adaptability, coupled with mutual learning protocols, so that elaborate signal processing and pattern recognition methods are optimally combined with the user’s learnable modulation of brain signals towards robustness and usability. Additionally, cognitive mental state monitoring is employed to shape or refine the interaction. Shared-control approaches allow smart, context-aware robotics to complement the BCI channel for fine-grained control and reduction of the user’s mental workload. Last but not least, hybrid BCI designs exploit additional physiological signals to augment the BCI modality and enrich the control paradigm. The applicability and effectiveness of the aforementioned principles has been demonstrated in several exemplary applications evaluated with both able-bodied and motor-disabled end-users.
         </abstract>
     </entry>
+
+
+
+
+    <entry>
+        <entryId>9</entryId>
+        <sessionId>3</sessionId>
+        <chair>Jillian Augustine</chair>
+        <sessionName>Shaping Ecosystems</sessionName>
+        <presenterName>Hervé Vanderschuren</presenterName>
+        <department>Department of Biology, Institute of Agricultural Sciences</department>
+        <affiliation>ETH Zürich, Switzerland and University of Liège, Belgium</affiliation>
+        <imageId>vanderschuren</imageId>
+        <title>Stories from the lab, stories from the field: advancing crop biotechnology</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>13:40 – 14:40</time>
+        <keyNote>1</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            The use of crop biotechnology is steadily increasing in the agrosystems of industrialized countries. Recent advances in genome editing are anticipated to further accentuate this trend. Given its potential for low input agriculture, there is a need to bring the benefits of crop biotechnology to developing and emerging countries. The challenge goes beyond the mere generation of transgenic crops because development and deployment of genetically engineered crops require local capacities and support from the authorities. In the recent years, we have used biotechnological approaches to improve cassava, the most important root crop in the tropics. Cassava production and processing suffer from several constraints, including viral diseases, drought and post-harvest deterioration. A better understanding of crop responses to biotic and abiotic stresses combined with genetic engineering approaches can be particularly instrumental to generate plants with improved traits. We have used Omics approaches to characterize cassava response to stresses and to subsequently implement biotechnological approaches for trait improvement. Smallholders and industries in cassava growing regions need traits such as resistance against cassava mosaic and brown streak diseases, prolonged shelf-life, drought tolerance, modified starch and improved nutritional content. Importantly those technologies should be implemented in local germplasm to secure impact for the local value chains. We actively collaborate with local institutions for technology transfer and assessment of cassava technologies in the field.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>10</entryId>
+        <sessionId>3</sessionId>
+        <chair>Jillian Augustine</chair>
+        <sessionName>Shaping Ecosystems</sessionName>
+        <presenterName>Howard Griffiths</presenterName>
+        <department>Department of Plant Sciences</department>
+        <affiliation>University of Cambridge, UK</affiliation>
+        <imageId>augustine</imageId>
+        <title>Can we, and should we, turbocharge photosynthesis to increase crop productivity?</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>15:00 – 15:35</time>
+        <keyNote>0</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            A second green revolution is required for the sustainable production of foodstocks for a growing, increasingly urbanised population, at a time when farmers and food producers are faced with stagnating crop yields and an increasingly uncertain climatic conditions for crop growth. The world population also faces a crisis in terms of food consumption and health: in the developed world, 30% of food is wasted, whilst non-communicable diseases such as diabetes and coronary conditions are endemic; in the developing world, post-production food losses during storage, climatic instability and competition for potable water are already leading to local and national ethnic conflicts, disease and starvation. Whilst food redistribution could threaten economic stability, each kilo of cash crops could represent the export of around 250- 2500 kg (0.25 – 2.5 tonne) of scarce water resources from developing countries. Against these dilemmas, several approaches have been suggested to enhance the efficiency of harvesting sunlight by crop plants, including the introduction of the C4 pathway into crops such rice, or explorations to transfer some form of an algal or cyanobacterial carbon concentrating mechanism into higher plants.  The talk will present some of the fundamental insights recently into these processes, with a focus on the operation algal Chlamydomonas CCM, and progress made in expressing some of these associated components in a higher plant platform. We will also explore the tremendous advances in fundamental understanding associated with the research, the technical challenges and threats that could limit the applicability, in the context of global food security.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>11</entryId>
+        <sessionId>3</sessionId>
+        <chair>Jillian Augustine</chair>
+        <sessionName>Shaping Ecosystems</sessionName>
+        <presenterName>Louise Horsfall</presenterName>
+        <department>Biotechnology</department>
+        <affiliation>University of Edinburgh, Scotland</affiliation>
+        <imageId>horsfall</imageId>
+        <title>Microbes and metal nanoparticles</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>15:35 – 16:10</time>
+        <keyNote>0</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            Microorganisms have the potential to manufacture metallic nanoparticles, irrespective of the source of metal cations, and provide us with new particles with novel functions. To exploit this we are identifying and optimising genetic elements with an aim to increase nanoparticle production and control nanoparticle size and homogeneity; in effect standardising nanoparticle samples by using biology. Whilst developing this process we are exploring its application in the treatment of contaminated waste, water and land. For the former application we are working to remove copper from whisky distillery byproducts and for the latter application we are part of a larger collaboration aiming to financially incentivise land decontamination. After using phytoremediation to hyperaccumulate metal contaminants from the soil, plants are harvested, processed and used as a source of metals for bacterial nanoparticle synthesis. Both applications illustrate how synthetic biology might contribute to moving us towards a more circular economy.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>12</entryId>
+        <sessionId>3</sessionId>
+        <chair>Jasmin Taubenschmid</chair>
+        <sessionName>Shaping Ecosystems</sessionName>
+        <presenterName>Filippa Lentzos</presenterName>
+        <department>Department of Social Science, Health &amp; Medicine</department>
+        <affiliation>University of Edinburgh, Scotland</affiliation>
+        <imageId>lentzos</imageId>
+        <title>The misuse of biology: Are you on your guard?</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>16:30 – 17:30</time>
+        <keyNote>0</keyNote>
+        <addedDim>1</addedDim>
+        <abstract>
+            Trust in biologists is in a precarious position. Secrecy, safety breaches and controversial experiments are risking the reputation of biomedical science. At the same time, advances in biology and biomedicine are significantly eroding technological barriers to biological weapons.This lecture considers life scientists’ essential part in strengthening the red line against the inadvertent and deliberate misuse of biology. It considers past biological warfare programmes to weaponize disease, the multilateral disarmament response to them, and the possibility of biological weapons use today.
+        </abstract>
+    </entry>
 </sessions>
