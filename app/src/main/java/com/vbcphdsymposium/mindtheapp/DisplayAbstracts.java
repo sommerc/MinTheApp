@@ -1,5 +1,6 @@
 package com.vbcphdsymposium.mindtheapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -39,9 +41,21 @@ public class DisplayAbstracts extends AppCompatActivity {
             }
         }
 
-        TextView summary = (TextView) findViewById(R.id.summary);
-        Log.i("asdf", sessionEntries.get(j).summary);
+        TextView speaker_name = (TextView) findViewById(R.id.entry_speaker_name);
+        speaker_name.setText(sessionEntries.get(j).presenterName);
+
+        TextView title = (TextView) findViewById(R.id.entry_title);
+        title.setText(sessionEntries.get(j).title);
+
+        TextView summary = (TextView) findViewById(R.id.entry_summary);
         summary.setText(sessionEntries.get(j).summary);
+
+        ImageView speakerImg = (ImageView) findViewById(R.id.entry_speaker_img);
+        Context context = speakerImg.getContext();
+        int id = context.getResources().getIdentifier(sessionEntries.get(j).imageId, "drawable", context.getPackageName());
+        speakerImg.setImageResource(id);
+
+
 
     }
 }

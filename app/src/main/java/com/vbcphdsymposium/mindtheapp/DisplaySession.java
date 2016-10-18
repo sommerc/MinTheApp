@@ -51,12 +51,6 @@ public class DisplaySession extends AppCompatActivity {
         session_nr.setText(session_names[session_id]);
 
 
-        Context context = session_nr.getContext();
-        int lMyColorId = getResources().getIdentifier(String.format("session%d",session_id), "values", getPackageName());
-
-
-        Log.i("ColorID", String.format("%d",lMyColorId));
-//        session_nr.setTextColor(lMyColorId);
 
         // Create the adapter to convert the array to views
         SessionAdapter adapter = new SessionAdapter(this, currentSessionEntries);
