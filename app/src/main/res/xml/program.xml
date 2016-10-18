@@ -47,17 +47,163 @@
         <chair>Marina Martinic</chair>
         <sessionName>Molecular Toolbox</sessionName>
         <presenterName>Luke Alphey</presenterName>
-        <department>The Pirbright Institute</department>
-        <affiliation>Surrey, UK</affiliation>
+        <department>Department of Chemistry and Applied Biosciences</department>
+        <affiliation>ETH Zürich, Switzerland</affiliation>
         <imageId>alphey</imageId>
         <title>Genetic control of mosquitoess</title>
-        <date>04.11.2016</date>
+        <date>November 3rd</date>
         <day>Thursday</day>
         <time>11:20 – 11:55</time>
         <keyNote>0</keyNote>
         <addedDim>0</addedDim>
         <abstract>
             The rise in dengue over the past 50 years, together with recent outbreaks of chikungunya and Zika, has highlighted the lack of sustainable and efficient control of its primary vector Aedes aegypti. The development of genetic control has enabled the creation of possible alternative tools to traditional methods against mosquitoes either through population replacement or population suppression. We have developed synthetic genetic circuits to produce “genetically sterile” males of the target pest species.  These sterile male mosquitoes (male mosquitoes do not bite or transmit disease) are released continually over a wide area to mate with the target pest population; death of progeny due to inheritance of the transgene leads to decline of the target population.  A key feature is that the method is ‘self-limiting’; making it controllable, reliable and reversible, in contrast to methods where the genetic change needs to persist in the wild population. Genetic control strains based on this principle have now been developed for at least eight major insect pest species. Field trials for the lead Aedes aegypti strain, OX513A, have been successfully conducted in the Cayman Islands, Malaysia, Brazil and Panama. Target populations of this mosquito species were suppressed by over 90% relative to control populations, despite ongoing immigration from adjacent areas and differences in ecological and social settings. Public acceptance of the technology at the field sites has been good. Applications in agriculture and in conservation biology are also being actively considered.
+        </abstract>
+    </entry>
+
+
+
+
+
+    <entry>
+        <entryId>3</entryId>
+        <sessionId>1</sessionId>
+        <chair>Triin Laos</chair>
+        <sessionName>Manipulating the Code</sessionName>
+        <presenterName>Robert Grass</presenterName>
+        <department>The Pirbright Institute</department>
+        <affiliation>Surrey, UK</affiliation>
+        <imageId>alphey</imageId>
+        <title>Replacing T-Rex for data: Using fossilized DNA for the long-term storage of information</title>
+        <date>November 3rd</date>
+        <day>Thursday</day>
+        <time>13:15 – 13:50</time>
+        <keyNote>0</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            Some of the oldest information our society has access to is the genetic information of ancient species discovered in the DNA of fossil bone (up to 700’000 years old). However, DNA in solution or in our living bodies is a relatively vulnerable molecule, sensitive to light, radicals and even air (humidity). Inspired by the ancient samples we developed a chemical synthesis method for the fabrication of “Synthetic Fossils”. This is a glass-like material, in which DNA is encapsulated, and in which DNA is as well protected as in the prehistoric specimens. Driven by the current developments in medical diagnostics, the cost of DNA synthesis (=writing) and sequencing (=reading) are rapidly decreasing, allowing us to envision DNA as a high-density medium for long-term information storage. Implementing a small prototype (ca. 100 kB of digital information) with error correction capabilities and simulation of long-term storage by accelerated aging, we were able to display the longevity of the data stored up to at least 1000 years. The discussion will also include the use of encapsulated DNA as tracers and as distributed sensors.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>4</entryId>
+        <sessionId>1</sessionId>
+        <chair>Triin Laos</chair>
+        <sessionName>Manipulating the Code</sessionName>
+        <presenterName>Jonathan Gootenberg</presenterName>
+        <department>Department of Systems Biology</department>
+        <affiliation>MIT, Cambridge, USA</affiliation>
+        <imageId>grass</imageId>
+        <title>Beyond Cas9: Discovering single effector CRISPR tools</title>
+        <date>November 3rd</date>
+        <day>Thursday</day>
+        <time>13:50 – 14:25</time>
+        <keyNote>0</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            CRISPR-based molecular tools such as Cas9 have been quickly adopted into basic biology due to their re-programmability and ease of use. By expanding the CRISPR toolset to other effector proteins, we can discover new qualities such as novel PAM sequences, increased specificity, and RNA targeting. I will discuss methods for discovering and characterizing new CRISPR effectors, such as Cpf1 and the RNA-targeting effector C2c2.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>5</entryId>
+        <sessionId>1</sessionId>
+        <chair>Triin Laos</chair>
+        <sessionName>Manipulating the Code</sessionName>
+        <presenterName>Jason Chin</presenterName>
+        <department>Laboratory of Molecular Biology</department>
+        <affiliation>Centre for Chemical &amp; Synthetic Biology, Cambridge, UK</affiliation>
+        <imageId>chin</imageId>
+        <title>Reprogramming the Genetic Code</title>
+        <date>November 3rd</date>
+        <day>Thursday</day>
+        <time>14:55 – 15:55</time>
+        <keyNote>1</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            Innate Lymphoid Cells represent an emerging population of lymphocytes. ILCs include Natural Killer (NK) cells and three main subsets, ILC1, ILC2 and ILC3. In contrast to T and B cells, ILCs do not express antigen-specific receptors derived from gene rearrangements. Besides this major difference in their recognition repertoire, ILC and T cell subsets share striking similarities as ILC1, ILC2 and ILC3 are driven by T-bet, GATA-3 and RORg t transcription factors, and produce IFN-g, IL-5/IL-13 and IL-17/IL-22 respectively. In addition, NK cells are driven by Eomes and T-bet, can be cytolytic and produce IFN-g, inasmuch as CD8+ T cells. These common features led to suggest that ILCs might correspond to innate counterparts of T cells. Over the course of evolution, two highly parallel systems have thus emerged in which ILCs mimic the effector profile of T cell subsets. However, it is still unclear how the innate and adaptive immune systems integrate these two arms. We will review the emerging set of data showing that ILCs and T cells can exert redundant functions in natura in humans and in models of experimental disease in mice, and discuss how the overlapping functions of ILCs and T cells contribute to the robustness of immunity and hence to the fitness of the hosts.
+        </abstract>
+    </entry>
+
+
+
+    <entry>
+        <entryId>6</entryId>
+        <sessionId>2</sessionId>
+        <chair>Madalena Pinto</chair>
+        <sessionName>Bioengineering Medicine</sessionName>
+        <presenterName>Eric Vivier</presenterName>
+        <department>Centre d‘Immunologie de Marseille-Luminy</department>
+        <affiliation>Faculty of Science Aix-Marseille University, France</affiliation>
+        <imageId>vivier</imageId>
+        <title>Innate Lymphoid Cells: From discovery to clinical manipulations</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>09:00 – 10:00</time>
+        <keyNote>1</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            The information for synthesizing the molecules that allow organisms to survive and replicate is encoded in genomic DNA. In the cell, DNA is copied to messenger RNA, and triplet codons (64) in the messenger RNA are decoded - in the process of translation - to synthesize polymers of the natural 20 amino acids. This process (DNA RNA protein) describes the central dogma of molecular biology and is conserved in terrestrial life. We are interested in re-writing the central dogma to create organisms that synthesize proteins containing unnatural amino acids and polymers composed of monomer building blocks beyond the 20 natural amino acids. I will discuss our invention and synthetic evolution of new ‘orthogonal’ translational components (including ribosomes and aminoacyl-tRNA synthetases) to address the major challenges in re-writing the central dogma of biology. I will discuss the application of the approaches we have developed for incorporating unnatural amino acids into proteins and investigating and synthetically controlling diverse biological processes, with a particular emphasis on understanding the role of post-translational modifications.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>7</entryId>
+        <sessionId>2</sessionId>
+        <chair>Madalena Pinto</chair>
+        <sessionName>Bioengineering Medicine</sessionName>
+        <presenterName>Jean-Philippe Saint-Pierre</presenterName>
+        <department>Faculty of Engineering, Department of Materials</department>
+        <affiliation>Imperial College London, UK</affiliation>
+        <imageId>pierre</imageId>
+        <title>Designing bio-inspired materials for regenerative medicine</title>
+        <date>November 4th</date>
+        <day>Thursday</day>
+        <time>10:00 - 10:35</time>
+        <keyNote>0</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            The overarching goal of regenerative medicine is to restore tissue functions. In this talk, I will describe some of the recent advances made in The Stevens Group towards the development of novel biomaterials to achieve this goal. I will first discuss an array of projects aimed at improve osteochondral tissue regeneration with bio-inspired scaffold structures and functionalization innovations. Our work to induce cells to deposit collagen in a depth-dependent manner and to induce improved chondrogenesis via peptide-polymer conjugates, as well as hydrogels will be highlighted. In a second time, I will describe a first foray in the development of materials to mitigate tissue fibrosis. I will elaborate on our approach to identify extracellular matrix cues that are presented in response to protease released during inflammation and act as feedback loops to halt its deleterious effects and I will demonstrate how these specific biological cues can be used towards preventing tissue fibrosis. Finally, the ability to control topography and chemistry at the nanoscale offers exciting possibilities for stimulating growth of new tissue. Recent developments in this context will be discussed, with a focus on the development of nanoneedles that can be interfaced with tissues to modulate cellular responses towards in vivo tissue regeneration of large volumes of highly vascularized and hierarchically organized tissue.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>8</entryId>
+        <sessionId>2</sessionId>
+        <chair>Madalena Pinto</chair>
+        <sessionName>Bioengineering Medicine</sessionName>
+        <presenterName>Simon Ausländer</presenterName>
+        <department>Department of Biosystems Science and Engineering</department>
+        <affiliation>ETH Zürich, Switzerland</affiliation>
+        <imageId>auslander</imageId>
+        <title>Engineering of gene circuits for mammalian cell-based applications</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>10:35 – 11:10</time>
+        <keyNote>0</keyNote>
+        <addedDim>0</addedDim>
+        <abstract>
+            Synthetic gene switches provide mammalian cells the ability to fine-tune protein expression levels in an input-output relationship. Especially the design of gene switches responding to disease-related input molecules in the physiological concentration range offers great opportunities for cell-based biomedical applications. Customized mammalian cell lines engineered with such gene switches enables the detection of physiological amounts of immune cell-derived trigger molecules in human blood. Moreover, microencapsulated and implanted designer cells can also be used in cell therapy in order to autonomously detect disease states and produce a therapeutic response. The next generation of engineered mammalian cells advances from one-input to multi-input gene circuits that transform cells into sophisticated decision-making systems capable of performing complex information-processing tasks. Therefore, the components of multiple gene switches are connected to each other to build networks that follow input-programmable logic for advanced control of living cells. Post-transcriptional RNA controllers contribute to the design of large gene circuits by adding a new regulation layer and linking different transcriptional switches. In future, cells engineered with large gene circuits may logically respond to various disease-relevant input molecules at the same time thereby increasing the diagnostic precision as well as therapeutic intervention portfolio.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>8</entryId>
+        <sessionId>2</sessionId>
+        <chair>Tiffany Su</chair>
+        <sessionName>Bioengineering Medicine</sessionName>
+        <presenterName>Serafeim Perdikis</presenterName>
+        <department>Defitech Foundation</department>
+        <affiliation>École Polytechnique Fédérale de Lausanne, Switzerland</affiliation>
+        <imageId>perdikis</imageId>
+        <title>Brain-Computer Interaction: Principles and clinical applications</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>11:30 – 12:30</time>
+        <keyNote>0</keyNote>
+        <addedDim>1</addedDim>
+        <abstract>
+            Brain-Computer Interface (BCI) technology has been established as the solution towards direct mind control by human individuals. Clinical BCI applications are the spearhead of the field and motor-disabled end-users have been shown to benefit from a variety of BCI prototypes for communication, assistive mobility, motor substitution and restoration, environmental control and, more recently, neurorehabilitation. Pre-clinical and real-world validation of current BCI prototypes are essential for identifying these principles that can alleviate the shortcomings in the state-of-the-art and maximize the added value of BCI applications. In this talk, I will provide an overview of such principles successfully applied by the CNBI laboratory of EPFL, as well as exemplary applications where those have been evaluated. Our laboratory develops non-invasive BCI systems based on electroencephalographic (EEG) signals and, thus, devoid of medical hazards, real-time, portable, relatively low-cost and minimally obtrusive. Our research is pushing forward asynchronous paradigms offering spontaneous, ecological interaction. Furthermore, we stand on the machine-learning way to BCI with emphasis on personalization and adaptability, coupled with mutual learning protocols, so that elaborate signal processing and pattern recognition methods are optimally combined with the user’s learnable modulation of brain signals towards robustness and usability. Additionally, cognitive mental state monitoring is employed to shape or refine the interaction. Shared-control approaches allow smart, context-aware robotics to complement the BCI channel for fine-grained control and reduction of the user’s mental workload. Last but not least, hybrid BCI designs exploit additional physiological signals to augment the BCI modality and enrich the control paradigm. The applicability and effectiveness of the aforementioned principles has been demonstrated in several exemplary applications evaluated with both able-bodied and motor-disabled end-users.
         </abstract>
     </entry>
 </sessions>
