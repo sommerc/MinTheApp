@@ -21,11 +21,11 @@ final class MyAdapter extends android.widget.BaseAdapter {
     public MyAdapter(Context context) {
         mInflater = LayoutInflater.from(context);
 
-        mItems.add(new Item("Session I",    R.drawable.session1));
-        mItems.add(new Item("Session II",   R.drawable.session2));
-        mItems.add(new Item("Session III",  R.drawable.session3));
-        mItems.add(new Item("Session IV",   R.drawable.session4));
-        mItems.add(new Item("Added dimension",   R.drawable.session5));
+        mItems.add(new Item("Session I:\nMolecular Toolbox ",       R.drawable.session1));
+        mItems.add(new Item("Session II\nManipulating the Code",    R.drawable.session2));
+        mItems.add(new Item("Session III\nBioengineering Medicine", R.drawable.session3));
+        mItems.add(new Item("Session IV\nShaping Ecosystems",       R.drawable.session4));
+        mItems.add(new Item("Added dimension &\nPanel Discussion",  R.drawable.session5));
 
     }
 

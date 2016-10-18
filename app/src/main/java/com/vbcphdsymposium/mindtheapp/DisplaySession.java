@@ -1,5 +1,6 @@
 package com.vbcphdsymposium.mindtheapp;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,9 +41,22 @@ public class DisplaySession extends AppCompatActivity {
 
         }
 
-        TextView session_nr = (TextView) findViewById(R.id.session_nr);
-        session_nr.setText(String.format("Session %d", session_id +1));
+        String[] session_names = {"Session I:\nMolecular Toolbox",
+                "Session II\nManipulating the Code",
+                "Session III\nBioengineering Medicine",
+                "Session IV\nShaping Ecosystems",
+                "Added dimension &\nPanel Discussion" };
 
+        TextView session_nr = (TextView) findViewById(R.id.session_nr);
+        session_nr.setText(session_names[session_id]);
+
+
+        Context context = session_nr.getContext();
+        int lMyColorId = getResources().getIdentifier(String.format("session%d",session_id), "values", getPackageName());
+
+
+        Log.i("ColorID", String.format("%d",lMyColorId));
+//        session_nr.setTextColor(lMyColorId);
 
         // Create the adapter to convert the array to views
         SessionAdapter adapter = new SessionAdapter(this, currentSessionEntries);
