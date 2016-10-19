@@ -14,18 +14,19 @@ import java.util.List;
  * Created by sommerc on 10/14/2016.
  */
 
-final class MyAdapter extends android.widget.BaseAdapter {
-    private final List<Item> mItems = new ArrayList<Item>();
+final class MainAdapter extends android.widget.BaseAdapter {
+    private final List<SessionItem> mItems = new ArrayList<SessionItem>();
     private final LayoutInflater mInflater;
 
-    public MyAdapter(Context context) {
+    public MainAdapter(Context context) {
         mInflater = LayoutInflater.from(context);
 
-        mItems.add(new Item("Session I:\nMolecular Toolbox ",       R.drawable.session1));
-        mItems.add(new Item("Session II\nManipulating the Code",    R.drawable.session2));
-        mItems.add(new Item("Session III\nBioengineering Medicine", R.drawable.session3));
-        mItems.add(new Item("Session IV\nShaping Ecosystems",       R.drawable.session4));
-        mItems.add(new Item("Added dimension &\nPanel Discussion",  R.drawable.session5));
+        SessionData sd = SessionData.getInstance();
+        mItems.add(new SessionItem(sd.getSessionName(0, true), R.drawable.session1));
+        mItems.add(new SessionItem(sd.getSessionName(1, true), R.drawable.session2));
+        mItems.add(new SessionItem(sd.getSessionName(2, true), R.drawable.session3));
+        mItems.add(new SessionItem(sd.getSessionName(3, true), R.drawable.session4));
+        mItems.add(new SessionItem(sd.getSessionName(4, true), R.drawable.session5));
 
     }
 
@@ -35,7 +36,7 @@ final class MyAdapter extends android.widget.BaseAdapter {
     }
 
     @Override
-    public Item getItem(int i) {
+    public SessionItem getItem(int i) {
         return mItems.get(i);
     }
 
@@ -59,7 +60,7 @@ final class MyAdapter extends android.widget.BaseAdapter {
         picture = (ImageView) v.getTag(R.id.picture);
         name = (TextView) v.getTag(R.id.text);
 
-        Item item = getItem(i);
+        SessionItem item = getItem(i);
 
         picture.setImageResource(item.drawableId);
         name.setText(item.name);
@@ -67,11 +68,11 @@ final class MyAdapter extends android.widget.BaseAdapter {
         return v;
     }
 
-    private static class Item {
+    private static class SessionItem {
         public final String name;
         public final int drawableId;
 
-        Item(String name, int drawableId) {
+        SessionItem(String name, int drawableId) {
             this.name = name;
             this.drawableId = drawableId;
         }
