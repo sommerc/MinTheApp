@@ -9,6 +9,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 /**
@@ -29,15 +31,26 @@ public class SessionAdapter extends ArrayAdapter<SessionXmlParser.Entry> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.session_item, parent, false);
         }
 
+        if (position==0) {
+            // Set Activity bar title
+            TextView sessionHeading = (TextView) convertView.findViewById(R.id.session_nr);
+            //sessionHeading.setText(String.format("Speakers (chair: %s)", entry.chair));
+        }
+
         // Lookup view for data population
         TextView speakerName = (TextView) convertView.findViewById(R.id.speaker_name);
+        TextView speakerAffi = (TextView) convertView.findViewById(R.id.speaker_affi);
         TextView title = (TextView) convertView.findViewById(R.id.title);
-
+        TextView speakerTime = (TextView) convertView.findViewById(R.id.speaker_time);
         ImageView speakerImg = (ImageView) convertView.findViewById(R.id.speaker_img);
 
         // Populate the data into the template view using the data object
-        speakerName.setText(String.format("%s (%s, %s)", entry.presenterName, entry.department, entry.affiliation));
-
+        speakerAffi.setText(String.format("%s, %s", entry.department, entry.affiliation));
+        String name = entry.presenterName;
+        if (entry.keyNote==1) {name+=" (keynote)";}
+        if (entry.addedDim==1) {name+=" (added dimension)";}
+        speakerName.setText(name);
+        speakerTime.setText(String.format("%s %s", entry.day, entry.time));
         Context context = speakerImg.getContext();
         int id = context.getResources().getIdentifier(entry.imageId, "drawable", context.getPackageName());
         speakerImg.setImageResource(id);

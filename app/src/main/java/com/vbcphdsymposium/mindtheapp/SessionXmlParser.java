@@ -43,6 +43,7 @@ public class SessionXmlParser {
         public final String date;
         public final String day;
         public final String time;
+        public final String chair;
 
         public final int keyNote;
         public final int addedDim;
@@ -51,7 +52,8 @@ public class SessionXmlParser {
 
         private Entry(int entryId, int sessionId, String sessionName, String department,
                       String presenterName, String affiliation, String imageId, String title,
-                      String date, String day, String time, int keyNote, int addedDim, String summary)
+                      String date, String day, String time, int keyNote, int addedDim, String summary,
+                      String chair)
 
         {
             this.entryId = entryId;
@@ -68,6 +70,7 @@ public class SessionXmlParser {
             this.keyNote = keyNote;
             this.addedDim = addedDim;
             this.summary = summary;
+            this.chair = chair;
 
         }
     }
@@ -88,6 +91,7 @@ public class SessionXmlParser {
         int keyNote = 0;
         int addedDim = 0;
         String summary = null;
+        String chair = null;
 
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -122,13 +126,15 @@ public class SessionXmlParser {
                 addedDim = readInt(parser, "addedDim");
             } else if (name.equals("abstract")) {
                 summary = readString(parser, "abstract");
+            } else if (name.equals("chair")) {
+                summary = readString(parser, "chair");
             }
             else {
                 skip(parser);
             }
         }
         return new Entry(entryId, sessionId, sessionName, department, presenterName, affiliation, imageId, title,
-                date, day, time, keyNote, addedDim, summary);
+                date, day, time, keyNote, addedDim, summary, chair);
     }
 
     // Processes title tags in the feed.

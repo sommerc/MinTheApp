@@ -1,7 +1,10 @@
 package com.vbcphdsymposium.mindtheapp;
 
+import android.app.ActionBar;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,10 +32,8 @@ public class DisplaySession extends AppCompatActivity {
         Intent intent = getIntent();
         int session_id = intent.getIntExtra("session_to_show", 0);
 
-
         // Construct the data source
         ArrayList<SessionXmlParser.Entry> currentSessionEntries = new ArrayList<SessionXmlParser.Entry>();
-
 
         for (SessionXmlParser.Entry entry : sessionEntries) {
             if (entry.sessionId == session_id) {
@@ -41,23 +42,24 @@ public class DisplaySession extends AppCompatActivity {
 
         }
 
-        String[] session_names = {"Session I:\nMolecular Toolbox",
-                "Session II\nManipulating the Code",
-                "Session III\nBioengineering Medicine",
-                "Session IV\nShaping Ecosystems",
-                "Added dimension &\nPanel Discussion" };
+        // Get SessionName
+        String sessionName = SessionData.getInstance().getSessionName(session_id, true);
 
-        TextView session_nr = (TextView) findViewById(R.id.session_nr);
-        session_nr.setText(session_names[session_id]);
+        // Make Background color
+        String[] sessionColors = SessionData.getInstance().colors;
+        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor(sessionColors[session_id]));
+        getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
-
+        setTitle(sessionName);
 
         // Create the adapter to convert the array to views
         SessionAdapter adapter = new SessionAdapter(this, currentSessionEntries);
+
         // Attach the adapter to a ListView
         ListView listView = (ListView) findViewById(R.id.activity_display_session);
         listView.setAdapter(adapter);
 
+        // Create OnItemClickListener
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                             @Override
                                             public void onItemClick(AdapterView<?> parent, View v,
@@ -71,8 +73,6 @@ public class DisplaySession extends AppCompatActivity {
                                             }
                                         }
         );
-
-
     }
 }
 
