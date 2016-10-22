@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -47,8 +48,11 @@ public class DisplayAbstracts extends AppCompatActivity {
         TextView title = (TextView) findViewById(R.id.entry_title);
         title.setText(sessionEntries.get(j).title);
 
-        TextView summary = (TextView) findViewById(R.id.entry_summary);
-        summary.setText(sessionEntries.get(j).summary);
+        WebView summary = (WebView) findViewById(R.id.entry_summary);
+
+        String summaryText = String.format("<html><body><p align=\"justify\">%s</p></body></html>", sessionEntries.get(j).summary);
+
+        summary.loadData(summaryText, "text/html", "utf-8");
 
         ImageView speakerImg = (ImageView) findViewById(R.id.entry_speaker_img);
         Context context = speakerImg.getContext();

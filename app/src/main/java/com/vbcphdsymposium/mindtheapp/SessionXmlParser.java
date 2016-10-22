@@ -91,7 +91,7 @@ public class SessionXmlParser {
         int keyNote = 0;
         int addedDim = 0;
         String summary = null;
-        String chair = null;
+        String chair = "";
 
         while (parser.next() != XmlPullParser.END_TAG) {
             if (parser.getEventType() != XmlPullParser.START_TAG) {
@@ -127,7 +127,7 @@ public class SessionXmlParser {
             } else if (name.equals("abstract")) {
                 summary = readString(parser, "abstract");
             } else if (name.equals("chair")) {
-                summary = readString(parser, "chair");
+                chair = readString(parser, "chair");
             }
             else {
                 skip(parser);

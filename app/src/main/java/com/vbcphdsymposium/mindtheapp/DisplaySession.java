@@ -31,6 +31,7 @@ public class DisplaySession extends AppCompatActivity {
 
         Intent intent = getIntent();
         int session_id = intent.getIntExtra("session_to_show", 0);
+        String[] sessionColors = SessionData.getInstance().colors;
 
         // Construct the data source
         ArrayList<SessionXmlParser.Entry> currentSessionEntries = new ArrayList<SessionXmlParser.Entry>();
@@ -39,14 +40,18 @@ public class DisplaySession extends AppCompatActivity {
             if (entry.sessionId == session_id) {
                 currentSessionEntries.add(entry);
             }
-
         }
+
+            // Set Activity bar title
+        TextView sessionHeading = (TextView) findViewById(R.id.session_nr);
+        sessionHeading.setText(String.format("Chair: %s", currentSessionEntries.get(0).chair));
+        sessionHeading.setTextColor(Color.parseColor(sessionColors[session_id]));
 
         // Get SessionName
         String sessionName = SessionData.getInstance().getSessionName(session_id, true);
 
         // Make Background color
-        String[] sessionColors = SessionData.getInstance().colors;
+
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor(sessionColors[session_id]));
         getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
@@ -57,6 +62,9 @@ public class DisplaySession extends AppCompatActivity {
 
         // Attach the adapter to a ListView
         ListView listView = (ListView) findViewById(R.id.activity_display_session);
+
+        listView.setDivider(new ColorDrawable(Color.parseColor(sessionColors[session_id])));
+        listView.setDividerHeight(2);
         listView.setAdapter(adapter);
 
         // Create OnItemClickListener

@@ -31,12 +31,6 @@ public class SessionAdapter extends ArrayAdapter<SessionXmlParser.Entry> {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.session_item, parent, false);
         }
 
-        if (position==0) {
-            // Set Activity bar title
-            TextView sessionHeading = (TextView) convertView.findViewById(R.id.session_nr);
-            //sessionHeading.setText(String.format("Speakers (chair: %s)", entry.chair));
-        }
-
         // Lookup view for data population
         TextView speakerName = (TextView) convertView.findViewById(R.id.speaker_name);
         TextView speakerAffi = (TextView) convertView.findViewById(R.id.speaker_affi);

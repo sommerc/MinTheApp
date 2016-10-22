@@ -10,13 +10,13 @@
         <affiliation>EMBL, Heidelberg</affiliation>
         <imageId>ellenberg</imageId>
         <title>Systems biology of cell division using light microscopy</title>
-        <date>04.11.2016</date>
+        <date>November 3rd</date>
         <day>Thursday</day>
         <time>9:45 - 10:45</time>
         <keyNote>1</keyNote>
         <addedDim>0</addedDim>
         <abstract>
-            Cell division is fundamental to all life. In somatic cells it drives the continuous renewal of tissues, in the embryo the rapid proliferation of totipotent cells. We have developed advanced light microscopy tools to study both in a systematic and quantitative manner. Using systematic gene silencing by RNAi and subsequent phenotyping by high‐throughput microscopy we have defined ~600 genes that are required for a human cell to divide faithfully during somatic mitosis. To understand the resulting dynamic protein networks and their orchestration in space and time, we have established an integrated systems biology workflow. After homozygous genome editing to tag all endogenous copies of a given mitotic protein fluorescently, we image its absolute abundance and subcellular distribution by calibrated 4D imaging relative to spatio‐temporal landmarks. Computational image analysis and modeling allows us to align cell morphology in space and time to obtain a standard mitotic cell into which we can integrate all protein data. Using image parameterization and machine learning, we measure the dynamic subcellular localization as well as fluxes between subcellular compartments and structures, which enables predictions of protein clusters, the chronological order of their formation and disassembly, and the abundance of their subunits. Our integrated computational and experimental method is generic and makes many dynamic cellular processes amenable to dynamic protein network analysis. Light‐sheet imaging has revolutionized our understanding of cell division during embryonic development in many biological model systems. Early mammalian development, however, remained inaccessible due to high light sensitivity and demanding culture requirements. A newly developed inverted high‐throughput capable light‐sheet microscope enabled the first in toto imaging of preimplantation mouse development from zygote to blastocyst. Using computational cell tracking, lineage tree reconstruction, and fate assignment, we revealed when fate determination happens and that chromosome segregation problems and aneuploidy is relatively common in mouse embryos.
+            Cell division is fundamental to all life. In somatic cells it drives the continuous renewal of tissues, in the embryo the rapid proliferation of totipotent cells. We have developed advanced light microscopy tools to study both in a systematic and quantitative manner. Using systematic gene silencing by RNAi and subsequent phenotyping by high-throughput microscopy we have defined ~600 genes that are required for a human cell to divide faithfully during somatic mitosis. To understand the resulting dynamic protein networks and their orchestration in space and time, we have established an integrated systems biology workflow. After homozygous genome editing to tag all endogenous copies of a given mitotic protein fluorescently, we image its absolute abundance and subcellular distribution by calibrated 4D imaging relative to spatio‐temporal landmarks. Computational image analysis and modeling allows us to align cell morphology in space and time to obtain a standard mitotic cell into which we can integrate all protein data. Using image parameterization and machine learning, we measure the dynamic subcellular localization as well as fluxes between subcellular compartments and structures, which enables predictions of protein clusters, the chronological order of their formation and disassembly, and the abundance of their subunits. Our integrated computational and experimental method is generic and makes many dynamic cellular processes amenable to dynamic protein network analysis. Light‐sheet imaging has revolutionized our understanding of cell division during embryonic development in many biological model systems. Early mammalian development, however, remained inaccessible due to high light sensitivity and demanding culture requirements. A newly developed inverted high‐throughput capable light‐sheet microscope enabled the first in toto imaging of preimplantation mouse development from zygote to blastocyst. Using computational cell tracking, lineage tree reconstruction, and fate assignment, we revealed when fate determination happens and that chromosome segregation problems and aneuploidy is relatively common in mouse embryos.
         </abstract>
     </entry>
 
@@ -289,4 +289,45 @@
             Trust in biologists is in a precarious position. Secrecy, safety breaches and controversial experiments are risking the reputation of biomedical science. At the same time, advances in biology and biomedicine are significantly eroding technological barriers to biological weapons.This lecture considers life scientists’ essential part in strengthening the red line against the inadvertent and deliberate misuse of biology. It considers past biological warfare programmes to weaponize disease, the multilateral disarmament response to them, and the possibility of biological weapons use today.
         </abstract>
     </entry>
+
+    <entry>
+        <entryId>13</entryId>
+        <sessionId>4</sessionId>
+        <chair>Tiffany Su</chair>
+        <sessionName>Bioengineering Medicine</sessionName>
+        <presenterName>Serafeim Perdikis</presenterName>
+        <department>Defitech Foundation</department>
+        <affiliation>École Polytechnique Fédérale de Lausanne, Switzerland</affiliation>
+        <imageId>perdikis</imageId>
+        <title>Brain-Computer Interaction: Principles and clinical applications</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>11:30 – 12:30</time>
+        <keyNote>0</keyNote>
+        <addedDim>1</addedDim>
+        <abstract>
+            Brain-Computer Interface (BCI) technology has been established as the solution towards direct mind control by human individuals. Clinical BCI applications are the spearhead of the field and motor-disabled end-users have been shown to benefit from a variety of BCI prototypes for communication, assistive mobility, motor substitution and restoration, environmental control and, more recently, neurorehabilitation. Pre-clinical and real-world validation of current BCI prototypes are essential for identifying these principles that can alleviate the shortcomings in the state-of-the-art and maximize the added value of BCI applications. In this talk, I will provide an overview of such principles successfully applied by the CNBI laboratory of EPFL, as well as exemplary applications where those have been evaluated. Our laboratory develops non-invasive BCI systems based on electroencephalographic (EEG) signals and, thus, devoid of medical hazards, real-time, portable, relatively low-cost and minimally obtrusive. Our research is pushing forward asynchronous paradigms offering spontaneous, ecological interaction. Furthermore, we stand on the machine-learning way to BCI with emphasis on personalization and adaptability, coupled with mutual learning protocols, so that elaborate signal processing and pattern recognition methods are optimally combined with the user’s learnable modulation of brain signals towards robustness and usability. Additionally, cognitive mental state monitoring is employed to shape or refine the interaction. Shared-control approaches allow smart, context-aware robotics to complement the BCI channel for fine-grained control and reduction of the user’s mental workload. Last but not least, hybrid BCI designs exploit additional physiological signals to augment the BCI modality and enrich the control paradigm. The applicability and effectiveness of the aforementioned principles has been demonstrated in several exemplary applications evaluated with both able-bodied and motor-disabled end-users.
+        </abstract>
+    </entry>
+
+    <entry>
+        <entryId>14</entryId>
+        <sessionId>4</sessionId>
+        <chair>Jasmin Taubenschmid</chair>
+        <sessionName>Shaping Ecosystems</sessionName>
+        <presenterName>Filippa Lentzos</presenterName>
+        <department>Department of Social Science, Health &amp; Medicine</department>
+        <affiliation>University of Edinburgh, Scotland</affiliation>
+        <imageId>lentzos</imageId>
+        <title>The misuse of biology: Are you on your guard?</title>
+        <date>November 4th</date>
+        <day>Friday</day>
+        <time>16:30 – 17:30</time>
+        <keyNote>0</keyNote>
+        <addedDim>1</addedDim>
+        <abstract>
+            Trust in biologists is in a precarious position. Secrecy, safety breaches and controversial experiments are risking the reputation of biomedical science. At the same time, advances in biology and biomedicine are significantly eroding technological barriers to biological weapons.This lecture considers life scientists’ essential part in strengthening the red line against the inadvertent and deliberate misuse of biology. It considers past biological warfare programmes to weaponize disease, the multilateral disarmament response to them, and the possibility of biological weapons use today.
+        </abstract>
+    </entry>
+
 </sessions>

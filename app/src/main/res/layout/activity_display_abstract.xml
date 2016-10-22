@@ -21,8 +21,7 @@
             android:layout_height="100dp"
             android:textSize="14sp"
             android:paddingLeft="10dp"
-            android:textAlignment="center"
-            android:gravity="center_vertical"/>
+            android:gravity="left"/>
 
     </LinearLayout>
 
@@ -35,11 +34,12 @@
         android:textStyle="bold"
         />
 
-    <TextView
+    <WebView
     android:id="@+id/entry_summary"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:textSize="12sp"
+    android:textSize="8sp"
+
     />
 
 </LinearLayout>
