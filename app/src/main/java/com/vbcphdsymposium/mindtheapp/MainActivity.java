@@ -53,4 +53,10 @@ public class MainActivity extends AppCompatActivity {
         SessionData.getInstance().setData(sessionEntries);
 
     }
+
+    public void openPdf(View view)
+    {
+        Intent intent = new Intent(this, DisplayProgramPdf.class);
+        startActivity(intent);
+    }
 }
