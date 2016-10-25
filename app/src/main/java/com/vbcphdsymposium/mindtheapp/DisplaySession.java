@@ -31,56 +31,63 @@ public class DisplaySession extends AppCompatActivity {
 
         Intent intent = getIntent();
         int session_id = intent.getIntExtra("session_to_show", 0);
-        String[] sessionColors = SessionData.getInstance().colors;
 
-        // Construct the data source
-        ArrayList<SessionXmlParser.Entry> currentSessionEntries = new ArrayList<SessionXmlParser.Entry>();
+        if (session_id == 5){
+            Intent PanelIntent = new Intent(getApplicationContext(), DisplayPanel.class);
+            startActivity(PanelIntent);
+            finish();
+        } else {
 
-        for (SessionXmlParser.Entry entry : sessionEntries) {
-            if (entry.sessionId == session_id) {
-                currentSessionEntries.add(entry);
+
+            String[] sessionColors = SessionData.getInstance().colors;
+
+            // Construct the data source
+            ArrayList<SessionXmlParser.Entry> currentSessionEntries = new ArrayList<SessionXmlParser.Entry>();
+
+            for (SessionXmlParser.Entry entry : sessionEntries) {
+                if (entry.sessionId == session_id) {
+                    currentSessionEntries.add(entry);
+                }
             }
-        }
 
             // Set Activity bar title
-        TextView sessionHeading = (TextView) findViewById(R.id.session_nr);
-        sessionHeading.setText(String.format("Chair: %s", currentSessionEntries.get(0).chair));
-        sessionHeading.setTextColor(Color.parseColor(sessionColors[session_id]));
+            TextView sessionHeading = (TextView) findViewById(R.id.session_nr);
+            sessionHeading.setText(String.format("Chair: %s", currentSessionEntries.get(0).chair));
+            sessionHeading.setTextColor(Color.parseColor(sessionColors[session_id]));
 
-        // Get SessionName
-        String sessionName = SessionData.getInstance().getSessionName(session_id, true);
+            // Get SessionName
+            String sessionName = SessionData.getInstance().getSessionName(session_id, true);
 
-        // Make Background color
+            // Make Background color
 
-        ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor(sessionColors[session_id]));
-        getSupportActionBar().setBackgroundDrawable(colorDrawable);
+            ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor(sessionColors[session_id]));
+            getSupportActionBar().setBackgroundDrawable(colorDrawable);
 
-        setTitle(sessionName);
+            setTitle(sessionName);
 
-        // Create the adapter to convert the array to views
-        SessionAdapter adapter = new SessionAdapter(this, currentSessionEntries);
+            // Create the adapter to convert the array to views
+            SessionAdapter adapter = new SessionAdapter(this, currentSessionEntries);
 
-        // Attach the adapter to a ListView
-        ListView listView = (ListView) findViewById(R.id.activity_display_session);
+            // Attach the adapter to a ListView
+            ListView listView = (ListView) findViewById(R.id.activity_display_session);
 
-        listView.setDivider(new ColorDrawable(Color.parseColor(sessionColors[session_id])));
-        listView.setDividerHeight(2);
-        listView.setAdapter(adapter);
+            listView.setDivider(new ColorDrawable(Color.parseColor(sessionColors[session_id])));
+            listView.setDividerHeight(2);
+            listView.setAdapter(adapter);
 
-        // Create OnItemClickListener
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                                            @Override
-                                            public void onItemClick(AdapterView<?> parent, View v,
-                                                                    int position, long id) {
+            // Create OnItemClickListener
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                                @Override
+                                                public void onItemClick(AdapterView<?> parent, View v,
+                                                                        int position, long id) {
+                                                    Intent intent = new Intent(getApplicationContext(), DisplayAbstracts.class);
 
-                                                Intent intent = new Intent(getApplicationContext(), DisplayAbstracts.class);
-
-                                                intent.putExtra("entry_to_show", ((SessionXmlParser.Entry) parent.getItemAtPosition(position)).entryId);
-                                                startActivity(intent);
-
+                                                    intent.putExtra("entry_to_show", ((SessionXmlParser.Entry) parent.getItemAtPosition(position)).entryId);
+                                                    startActivity(intent);
+                                                }
                                             }
-                                        }
-        );
+            );
+        }
     }
 }
 

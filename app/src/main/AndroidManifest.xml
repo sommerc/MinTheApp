@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".DisplaySession"></activity>
         <activity android:name=".DisplayAbstracts"></activity>
+        <activity android:name=".DisplayPanel"></activity>
     </application>
 
 </manifest>

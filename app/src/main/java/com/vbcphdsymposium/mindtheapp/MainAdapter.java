@@ -27,6 +27,7 @@ final class MainAdapter extends android.widget.BaseAdapter {
         mItems.add(new SessionItem(sd.getSessionName(2, true), R.drawable.session3));
         mItems.add(new SessionItem(sd.getSessionName(3, true), R.drawable.session4));
         mItems.add(new SessionItem(sd.getSessionName(4, true), R.drawable.session5));
+        mItems.add(new SessionItem(sd.getSessionName(5, true), R.drawable.session6));
 
     }
 

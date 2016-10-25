@@ -12,8 +12,8 @@ public class SessionData {
     public void setData(List<SessionXmlParser.Entry> data) {this.data = data;}
 
     private final String[] names = {"Molecular Toolbox", "Manipulating the Code", "Bioengineering Medicine",
-                                    "Shaping Ecosystems", "Added Dimension & Panel Discussion"};
-    public final String[] colors = {"#662d8d","#16397f","#ee602d","#006338","#A12367"};
+                                    "Shaping Ecosystems", "Added Dimension", "Panel Discussion"};
+    public final String[] colors = {"#662d8d","#16397f","#ee602d","#006338","#A12367", "#007B92"};
 
 
     public String getSessionTitle(int sessionId) {
@@ -29,12 +29,15 @@ public class SessionData {
         } else if (sessionId==4) {
             prefix = names[sessionId];
         }
+        else if (sessionId==5) {
+            prefix = names[sessionId];
+        }
         return prefix;
     }
 
     public String getSessionName(int sessionId, boolean withPrefix) {
         String name = names[sessionId];
-        if (sessionId==4) {return name;}
+        if (sessionId>3) {return name;}
         if (withPrefix) {
             String prefix = getSessionTitle(sessionId);
 
