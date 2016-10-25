@@ -2,6 +2,7 @@ package com.vbcphdsymposium.mindtheapp;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -57,9 +58,7 @@ public class DisplayAbstracts extends AppCompatActivity {
         ImageView speakerImg = (ImageView) findViewById(R.id.entry_speaker_img);
         Context context = speakerImg.getContext();
         int id = context.getResources().getIdentifier(sessionEntries.get(j).imageId, "drawable", context.getPackageName());
+
         speakerImg.setImageResource(id);
-
-
-
     }
 }
