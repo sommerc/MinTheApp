@@ -41,8 +41,8 @@ public class SessionAdapter extends ArrayAdapter<SessionXmlParser.Entry> {
         // Populate the data into the template view using the data object
         speakerAffi.setText(String.format("%s, %s", entry.department, entry.affiliation));
         String name = entry.presenterName;
-        if (entry.keyNote==1) {name+=" (keynote)";}
-        if (entry.addedDim==1) {name+=" (added dimension)";}
+        if (entry.keyNote==1) {name+=" (Keynote)";}
+        if (entry.addedDim==1) {name+=" (Added dimension)";}
         speakerName.setText(name);
         speakerTime.setText(String.format("%s %s", entry.day, entry.time));
         Context context = speakerImg.getContext();

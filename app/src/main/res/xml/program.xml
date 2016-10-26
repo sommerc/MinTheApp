@@ -3,7 +3,7 @@
     <entry>
         <entryId>0</entryId>
         <sessionId>0</sessionId>
-        <chair>Marina Martinic</chair>
+        <chair>Marina Martinic Kavur</chair>
         <sessionName>Molecular Toolbox</sessionName>
         <presenterName>Jan Ellenberg</presenterName>
         <department>Cell Biology &amp; Biophysics Unit</department>
@@ -23,7 +23,7 @@
     <entry>
         <entryId>1</entryId>
         <sessionId>0</sessionId>
-        <chair>Marina Martinic</chair>
+        <chair>Marina Martinic Kavur</chair>
         <sessionName>Molecular Toolbox</sessionName>
         <presenterName>Steve Lever</presenterName>
         <department>Defence Science and Technology Laboratory</department>
@@ -44,13 +44,13 @@
     <entry>
         <entryId>2</entryId>
         <sessionId>0</sessionId>
-        <chair>Marina Martinic</chair>
+        <chair>Marina Martinic Kavur</chair>
         <sessionName>Molecular Toolbox</sessionName>
         <presenterName>Luke Alphey</presenterName>
         <department>Department of Chemistry and Applied Biosciences</department>
         <affiliation>ETH Zürich, Switzerland</affiliation>
         <imageId>alphey</imageId>
-        <title>Genetic control of mosquitoess</title>
+        <title>Genetic control of mosquitoes</title>
         <date>November 3rd</date>
         <day>Thursday</day>
         <time>11:20 – 11:55</time>

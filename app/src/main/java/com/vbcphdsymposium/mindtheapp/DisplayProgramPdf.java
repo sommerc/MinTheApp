@@ -30,14 +30,17 @@ public class DisplayProgramPdf extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Intent inputIntent = getIntent();
+
+
         Context context = getApplicationContext();
-        final File file = new File(context.getFilesDir(), "VBCPhDSymposium_2016.pdf");
+        final File file = new File(context.getFilesDir(), inputIntent.getStringExtra("kind"));
 
         if (!file.exists()) {
             AssetManager assets=getResources().getAssets();
 
             try {
-                copy(assets.open("VBCPhDSymposium_2016.pdf"), file);
+                copy(assets.open(inputIntent.getStringExtra("kind")), file);
             }
             catch (IOException e) {
                 Log.e("FileProvider", "Exception copying from assets", e);

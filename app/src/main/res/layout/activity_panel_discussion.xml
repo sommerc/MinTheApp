@@ -1,60 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="@dimen/activity_horizontal_margin">
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
 
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:fillViewport="true"
+        android:paddingBottom="40dp"
+        >
 
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/anvajo"
-            android:maxHeight="64dp"/>
-        <TextView
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/anvajo"/>
+            android:padding="@dimen/activity_horizontal_margin"
+            android:adjustViewBounds= "true"
+            android:gravity="center"
+            >
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/cellestia"
-            android:maxHeight="100dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/cellestia"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/scarlet"
-            android:maxHeight="100dp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/scarlet"/>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/identity"
-            android:maxHeight="100dp"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/turbo"
-            android:maxHeight="100dp"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/haelixa"
-            android:maxHeight="100dp"/>
+            <ImageView
+                style="@style/panelDiscussionImage"
+                android:src="@drawable/anvajo"
+                android:maxHeight="96dp"
+                />
+            <TextView
+                style="@style/panelDiscussionText"
+                android:text="@string/anvajo"/>
 
-    </LinearLayout>
-</ScrollView>
+            <View
+                style="@style/panelDiscussionSpacer"/>
+
+            <ImageView
+                style="@style/panelDiscussionImage"
+                android:src="@drawable/cellestia"
+                />
+            <TextView
+                style="@style/panelDiscussionText"
+                android:text="@string/cellestia"/>
+
+            <View
+                style="@style/panelDiscussionSpacer"
+                android:maxHeight="96dp"/>
+
+            <ImageView
+                style="@style/panelDiscussionImage"
+                android:src="@drawable/scarlet"
+                />
+            <TextView
+                style="@style/panelDiscussionText"
+                android:text="@string/scarlet"/>
+            <View
+                style="@style/panelDiscussionSpacer"/>
+
+            <ImageView
+                style="@style/panelDiscussionImage"
+                android:src="@drawable/identity"
+                />
+            <ImageView
+                style="@style/panelDiscussionImage"
+                android:src="@drawable/turbo"
+                />
+            <ImageView
+                style="@style/panelDiscussionImage"
+                android:src="@drawable/haelixa"
+                />
+            <TextView
+                style="@style/panelDiscussionText"
+                android:text="@string/identity"/>
+            <TextView
+                style="@style/panelDiscussionText"
+                android:text="@string/turbo"/>
+            <TextView
+                style="@style/panelDiscussionText"
+                android:text="@string/haelixa"/>
+            <View
+                style="@style/panelDiscussionSpacer"/>
+            <ImageView
+                style="@style/panelDiscussionImage"
+                android:src="@drawable/inits"
+                android:maxHeight="96dp"
+                />
+            <TextView
+                style="@style/panelDiscussionText"
+                android:text="@string/inits"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

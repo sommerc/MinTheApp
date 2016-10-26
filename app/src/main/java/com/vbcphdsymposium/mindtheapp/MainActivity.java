@@ -54,9 +54,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openPdf(View view)
+
+    public void openPdfBooklet(View view)
     {
         Intent intent = new Intent(this, DisplayProgramPdf.class);
+        intent.putExtra("kind", "VBCPhDSymposium_2016.pdf");
+        startActivity(intent);
+    }
+
+    public void openPdfProgram(View view)
+    {
+        Intent intent = new Intent(this, DisplayProgramPdf.class);
+        intent.putExtra("kind", "VBCPhDSymposium_2016_programme.pdf");
         startActivity(intent);
     }
 }
