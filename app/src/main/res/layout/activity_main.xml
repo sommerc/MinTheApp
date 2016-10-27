@@ -1,26 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-
-
-
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fillViewport="true"
+    android:paddingTop="8dp"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="40dp"
     >
 
-    <ImageView
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:scaleType="fitXY"
-        android:src="@drawable/background" />
-
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:paddingBottom="36dp"
-        android:layout_marginTop="16dp"
-
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical"
 
         >
@@ -28,34 +21,38 @@
         <GridView
             android:id="@+id/gridview"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:paddingLeft="36dp"
-            android:paddingRight="25dp"
-            android:verticalSpacing="4dp"
-            android:horizontalSpacing="72dp"
+            android:gravity="center"
+            android:layout_gravity="center"
             android:stretchMode="columnWidth"
-            android:numColumns="2"/>
+            android:numColumns="2"
+            android:paddingTop="8dp"
+            android:paddingBottom="2dp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
-            android:background="@android:color/darker_gray">
+            android:background="@color/colorPrimary"
+            android:padding="2dp"
+            >
             <TextView
                 android:id="@+id/full_program"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-
-                android:background="@color/colorPrimaryDark"
+                android:background="@drawable/roundedbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="BOOKLET"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
                 android:textColor="@android:color/white"
-                android:textSize="20sp"
+                android:textSize="12sp"
                 android:textStyle="bold"
 
+                android:text="BOOKLET"
                 android:onClick="openPdfBooklet"/>
 
             <TextView android:layout_width="64dp"
@@ -63,15 +60,17 @@
 
             <TextView
                 android:id="@+id/full_booklet"
-                android:paddingLeft="14dp"
-                android:paddingRight="14dp"
-                android:background="@color/colorPrimaryDark"
+                android:background="@drawable/roundedbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="PROGRAMME"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
                 android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:text="PROGRAMME"
                 android:onClick="openPdfProgram"/>
 
         </LinearLayout>
