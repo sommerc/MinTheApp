@@ -39,7 +39,7 @@ public class SessionAdapter extends ArrayAdapter<SessionXmlParser.Entry> {
         speakerAffi.setText(String.format("%s, %s", entry.department, entry.affiliation));
         String name = entry.presenterName;
         if (entry.keyNote==1) {name+=" (Keynote)";}
-        if (entry.addedDim==1) {name+=" (Added dimension)";}
+        if (entry.addedDim==1) {name+=" (Added Dimension)";}
         speakerName.setText(name);
         speakerTime.setText(String.format("%s %s", entry.day, entry.time));
         Context context = speakerImg.getContext();

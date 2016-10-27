@@ -12,7 +12,7 @@
             android:id="@+id/speaker_img"
             android:layout_width="112dp"
             android:layout_height="112dp"
-            android:padding="8dip"
+            android:padding="6dip"
             />
         <TextView
             android:id="@+id/speaker_time"
@@ -39,7 +39,7 @@
             android:padding="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:textSize="16sp"
             android:textStyle="italic"
             />
 
@@ -48,7 +48,7 @@
             android:paddingTop="0dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="14sp"
+            android:textSize="12sp"
             />
 
         <TextView
@@ -56,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="4dip"
-            android:textSize="16sp"
+            android:textSize="14sp"
             android:textStyle="bold"
             />
 
