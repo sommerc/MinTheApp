@@ -5,6 +5,7 @@ import android.content.res.Resources;
 import android.content.res.XmlResourceParser;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
             sessionEntries = sxp.parse(xrp);
         }
         catch (IOException | XmlPullParserException e) {
-//            Log.i("MainActivity", "IO Error");
+            Log.e("MainActivity", e.toString());
         }
         SessionData.getInstance().setData(sessionEntries);
 
