@@ -35,8 +35,8 @@ public class DisplayProgramPdf extends Activity
         final File file = new File(context.getFilesDir(), inputIntent.getStringExtra("kind"));
 
         if (!file.exists()) {
+            // copy from assets folder
             AssetManager assets=getResources().getAssets();
-
             try {
                 copy(assets.open(inputIntent.getStringExtra("kind")), file);
             }
@@ -45,11 +45,10 @@ public class DisplayProgramPdf extends Activity
             }
         }
 
+        // create Uri
+        final Uri uri = FileProvider.getUriForFile(this, "com.VBCPhDSymposium.MindTheApp.fileprovider", file);
 
-// let the FileProvider generate an URI for this private file
-        final Uri uri = FileProvider.getUriForFile(this, "com.vbcphdsymposium.mindtheapp.fileprovider", file);
-// create an intent, so the user can choose which application he/she wants to use to share this file
-
+        // start ACTION_VIEW intent for pdf
         Intent intent = new Intent();
         intent.setAction(Intent.ACTION_VIEW);
         intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
@@ -62,7 +61,6 @@ public class DisplayProgramPdf extends Activity
             Intent playStoreIntent = new Intent(Intent.ACTION_VIEW,
             Uri.parse("https://play.google.com/store/apps/details?id=com.adobe.reader&hl=en"));
             startActivity(playStoreIntent);
-
         }
         finish();
 
