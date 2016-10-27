@@ -52,7 +52,7 @@ public class DisplayAbstracts extends AppCompatActivity {
 
         } else if (sessionEntries.get(j).keyNote == 1) {
             TextView speaker_mod = (TextView) findViewById(R.id.entry_speaker_mod);
-            speaker_mod.setText("KEYNOTE");
+            speaker_mod.setText("KEYNOTE LECTURE");
             speaker_mod.setTextColor(Color.parseColor(sessionColors[sessionEntries.get(j).sessionId]));
             speaker_mod.setTextColor(speaker_mod.getTextColors().withAlpha(80));
         }
