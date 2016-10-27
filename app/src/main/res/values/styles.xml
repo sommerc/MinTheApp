@@ -9,11 +9,19 @@
     </style>
 
     <style name="panelDiscussionImage">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:gravity">center_horizontal</item>
-        <item name="android:maxHeight">64dp</item>
-        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingRight">16dp</item>
+
+    </style>
+
+    <style name="panelDiscussionImageSpeaker">
+        <item name="android:layout_width">128dp</item>
+        <item name="android:layout_height">128dp</item>
+        <item name="android:gravity">center</item>
+
+        <item name="android:layout_alignParentTop">true</item>
     </style>
 
     <style name="panelDiscussionText">
@@ -25,9 +33,19 @@
 
     <style name="panelDiscussionSpacer">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_margin">16dp</item>
-        <item name="android:layout_height">2dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_height">1dp</item>
         <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+    <style name="panelDiscussionSpeakerName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingBottom">4dp</item>
     </style>
 
 </resources>

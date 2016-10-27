@@ -2,18 +2,23 @@
     <string name="app_name">"MindTheApp: Program"</string>
     <string name="program">"Program"</string>
 
+    <string name="anvajo_speaker">Stefan Frädrich</string>
     <string name="anvajo"><b>Anvajo</b> is a spin-off of the University of Technology Dresden and has developed a cutting-edge ‚minilab‘ for home (1-drop) blood, urine, saliva and sperm testing, providing immediate results at laboratory-grade accuracy. Stefan Frädrich has started the development 5 years ago and has been supported by the TU Dresden and University Trondheim. The project has been funded by the EXIST Gründerstipendium previously and the company was then founded in January 2016, together with Stefan‘s co-founder and now CEO Verena Kretschmann. Anvajo has several fully running prototypes, has just conducted a first clinical validation trial and is currently raising a seed investment round.</string>
 
+    <string name="cellestia_speaker">Rajwinder Lehal</string>
     <string name="cellestia"><b>Cellestia Biotech</b> is a private biopharmaceutical company with strategic focus on anti-cancer drugs modulating the NOTCH signaling pathway. Cellestia is actively engaged in the development of first-in-class mechanisms-based targeted therapeutics to address unmet medical needs, with an emphasis on oncology and immunological disorders.</string>
 
+    <string name="scarlet_speaker">Harald Schnidar</string>
     <string name="scarlet"><b>SCARLETRED</b> is a digital health Startup standing for NextGen Dermatology. The Viennese company is honored as born global champion, with the app of the year award and proven in Silicon Valley as most disruptive MedTech newcomer. Yet after years in clinical research it is entering the global Dermatology market with its revolutionary product SCARLETRED®Vision. The CE approved medical device software platform is first in kind enabling standardized skin imaging and objective visual skin analysis. It unlocks novel Big Data, quantified-self and predictive analytics applications in a broad range of dermatologic conditions. The expert team of SCARLETRED works together with highly reputational partners and supplies the product under individual subscription model to demanding clients in health care and biopharma industry.</string>
 
+    <string name="identity_speaker">Robert Grass</string>
     <string name="identity"><b>IdentityInside</b> offers unique and personalized jewelry with a person‘s fossilized DNA inside, which can maintain its integrity for thousands of years - just as in a natural fossil!</string>
 
     <string name="turbo"><b>TurboBeads</b> makes chemically functionalized magnetic materials commercially available. TurboBeads are highly magnetic nanocarriers with covalent chemical functionallities on the surface, which allow fast and efficient separation from large liquid volumes.</string>
 
     <string name="haelixa"><b>Haelixa</b> develops molecular tracers composed of encapsulated DNA sequences that can be mixed with any fluid and item, providing a unique fingerprint, which is easily identified and quantified even at very low levels.</string>
 
+    <string name="inits_speaker">Irene Fialka</string>
     <string name="inits"><b>INiTS</b> is a business incubator designed to improve the rate of startup success in Vienna by helping young entrepreneurs conceive, launch and grow the next great company. During our intensive incubation program, startups receive hands-on support, resources, a network and an office space to bring them to the next level. INiTS has supported many successful startups since 2002 and was ranked best business incubator in German-speaking countries, 3rd best in Europe and 7th best worldwide (amongst 1,200) by UBI Index in Nov. 2015. INiTS’ track record includes successes such as Dutalys, EMCOOLS, f-star, KiwiSecurity, Marinomed, mySugr, Radiant Minds, Shpock, S-target, Ubimet, Zoomsquare and many more in a broad range of industries. INiTS’ 199 startups have raised over 230 Mio € of private capital (big license and exit deal volumes, such as 0,5 billion € that Roche paid for Dutalys, excluded) and 113 Mio € of additional public funds.</string>
 </resources>
 
