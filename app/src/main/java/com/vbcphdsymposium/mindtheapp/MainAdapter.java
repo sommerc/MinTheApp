@@ -1,4 +1,4 @@
-package com.vbcphdsymposium.mindtheapp;
+package com.VBCPhDSymposium.MindTheApp;
 
 import android.content.Context;
 import android.view.LayoutInflater;

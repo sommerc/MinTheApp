@@ -1,4 +1,4 @@
-package com.vbcphdsymposium.mindtheapp;
+package com.VBCPhDSymposium.MindTheApp;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

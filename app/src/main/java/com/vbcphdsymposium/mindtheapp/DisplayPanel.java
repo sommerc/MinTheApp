@@ -1,4 +1,4 @@
-package com.vbcphdsymposium.mindtheapp;
+package com.VBCPhDSymposium.MindTheApp;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;

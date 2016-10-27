@@ -1,4 +1,4 @@
-package com.vbcphdsymposium.mindtheapp;
+package com.VBCPhDSymposium.MindTheApp;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.content.res.AssetManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.ShareCompat;
 import android.support.v4.content.FileProvider;
 import android.util.Log;
 
@@ -15,7 +14,6 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.OutputStream;
 
 /**
  * Created by sommerc on 10/25/2016.
