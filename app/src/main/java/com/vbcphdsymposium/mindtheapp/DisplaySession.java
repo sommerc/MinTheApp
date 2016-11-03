@@ -20,21 +20,23 @@ public class DisplaySession extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_session);
 
+        // get session data
         List<SessionXmlParser.Entry> sessionEntries = SessionData.getInstance().getData();
 
+        // get session_id = which session to show
         Intent intent = getIntent();
         int session_id = intent.getIntExtra("session_to_show", 0);
 
         if (session_id == 5){
+            // if it's 5 = panel discussion, start new PanelIntent
             Intent PanelIntent = new Intent(getApplicationContext(), DisplayPanel.class);
             startActivity(PanelIntent);
             finish();
         } else {
-
-
+            // if it's a normal session, display this session
             String[] sessionColors = SessionData.getInstance().colors;
 
-            // Construct the data source
+            // create list of sessions to show (all with the currrent session_id)
             ArrayList<SessionXmlParser.Entry> currentSessionEntries = new ArrayList<SessionXmlParser.Entry>();
 
             for (SessionXmlParser.Entry entry : sessionEntries) {
@@ -51,11 +53,9 @@ public class DisplaySession extends AppCompatActivity {
             // Get SessionName
             String sessionName = SessionData.getInstance().getSessionName(session_id, true);
 
-            // Make Background color
-
+            // Make background color of action bar
             ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor(sessionColors[session_id]));
             getSupportActionBar().setBackgroundDrawable(colorDrawable);
-
             setTitle(sessionName);
 
             // Create the adapter to convert the array to views
@@ -64,11 +64,12 @@ public class DisplaySession extends AppCompatActivity {
             // Attach the adapter to a ListView
             ListView listView = (ListView) findViewById(R.id.activity_display_session);
 
+            // Cofigure it a bit
             listView.setDivider(new ColorDrawable(Color.parseColor(sessionColors[session_id])));
             listView.setDividerHeight(2);
             listView.setAdapter(adapter);
 
-            // Create OnItemClickListener
+            // Create OnItemClickListener for clicks to view abstracts
             listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                                                 @Override
                                                 public void onItemClick(AdapterView<?> parent, View v,

@@ -10,6 +10,7 @@ import java.util.List;
 
 /**
  * Created by sommerc on 10/18/2016.
+ * SessionXmlParser to read data stored in program.xml
  */
 
 public class SessionXmlParser {

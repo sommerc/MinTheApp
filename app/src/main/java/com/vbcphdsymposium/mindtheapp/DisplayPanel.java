@@ -16,8 +16,10 @@ public class DisplayPanel extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_panel_discussion);
 
+        // get session data
         String[] sessionColors = SessionData.getInstance().colors;
 
+        // set action bar color and title
         ColorDrawable colorDrawable = new ColorDrawable(Color.parseColor(sessionColors[5]));
         getSupportActionBar().setBackgroundDrawable(colorDrawable);
 

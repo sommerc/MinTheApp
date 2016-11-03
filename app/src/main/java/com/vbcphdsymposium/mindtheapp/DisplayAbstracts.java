@@ -20,11 +20,14 @@ public class DisplayAbstracts extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_abstract);
 
+        // get data from sessions
         List<SessionXmlParser.Entry> sessionEntries = SessionData.getInstance().getData();
 
+        // get the entry_id for what to show
         Intent intent = getIntent();
         int entry_id = intent.getIntExtra("entry_to_show", 0);
 
+        // search for correct entry
         SessionXmlParser.Entry entry_to_show = sessionEntries.get(0);
         int j = 0;
         for (int i=0; i<sessionEntries.size();i++) {
@@ -34,15 +37,18 @@ public class DisplayAbstracts extends AppCompatActivity {
             }
         }
 
+        // get colors for the session
         String[] sessionColors = SessionData.getInstance().colors;
 
-
+        // set speaker name
         TextView speaker_name = (TextView) findViewById(R.id.entry_speaker_name);
         speaker_name.setText(sessionEntries.get(j).presenterName);
 
+        // set speaker affi
         TextView speaker_affi = (TextView) findViewById(R.id.entry_speaker_affi);
         speaker_affi.setText(String.format("%s, %s", sessionEntries.get(j).department, sessionEntries.get(j).affiliation));
 
+        // check if it's added dimension or keynote
         if (sessionEntries.get(j).addedDim == 1) {
             TextView speaker_mod = (TextView) findViewById(R.id.entry_speaker_mod);
             speaker_mod.setText("ADDED DIMENSION");
@@ -57,26 +63,28 @@ public class DisplayAbstracts extends AppCompatActivity {
             speaker_mod.setTextColor(speaker_mod.getTextColors().withAlpha(80));
         }
 
+        // set background color of the stripe
         View stripe = (View) findViewById(R.id.entry_stripe);
         ColorDrawable colorDrawable = new ColorDrawable();
         stripe.setBackgroundColor(Color.parseColor(sessionColors[sessionEntries.get(j).sessionId]));
 
+        // set Title
         TextView title = (TextView) findViewById(R.id.entry_title);
         title.setText(sessionEntries.get(j).title);
 
+        // Set abstract text and make background transparent
         WebView summary = (WebView) findViewById(R.id.entry_summary);
         summary.setBackgroundColor(Color.TRANSPARENT);
-
         String summaryText = String.format("<html><body><p align=\"justify\">%s</p></body></html>", sessionEntries.get(j).summary);
-
         summary.loadData(summaryText, "text/html", "utf-8");
 
+        // set speacker image by looking up drawable id from entry data
         ImageView speakerImg = (ImageView) findViewById(R.id.entry_speaker_img);
         Context context = speakerImg.getContext();
         int id = context.getResources().getIdentifier(sessionEntries.get(j).imageId, "drawable", context.getPackageName());
-
         speakerImg.setImageResource(id);
 
+        // set action bar title and color
         ColorDrawable colorDrawable2 = new ColorDrawable(Color.parseColor(sessionColors[sessionEntries.get(j).sessionId]));
         getSupportActionBar().setBackgroundDrawable(colorDrawable2);
 

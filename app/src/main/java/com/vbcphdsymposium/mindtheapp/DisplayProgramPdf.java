@@ -28,12 +28,13 @@ public class DisplayProgramPdf extends Activity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // get intent and "kind" = the pdf
         Intent inputIntent = getIntent();
-
 
         Context context = getApplicationContext();
         final File file = new File(context.getFilesDir(), inputIntent.getStringExtra("kind"));
 
+        // if file hasn't been copied from asset folder, do it
         if (!file.exists()) {
             // copy from assets folder
             AssetManager assets=getResources().getAssets();
@@ -54,10 +55,12 @@ public class DisplayProgramPdf extends Activity
         intent.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         intent.setDataAndType(uri, "application/pdf");
 
+        // start activity
         try {
             startActivity(intent);
         }
         catch (ActivityNotFoundException e) {
+            // if no pdf viewer installed, refer to play store
             Intent playStoreIntent = new Intent(Intent.ACTION_VIEW,
             Uri.parse("https://play.google.com/store/apps/details?id=com.adobe.reader&hl=en"));
             startActivity(playStoreIntent);

@@ -6,6 +6,9 @@ import java.util.List;
  * Created by sommerc on 10/18/2016.
  */
 
+/*
+* Singleton to hold session data, colors and names
+* */
 public class SessionData {
     private List<SessionXmlParser.Entry> data;
     public List<SessionXmlParser.Entry> getData() {return data;}
